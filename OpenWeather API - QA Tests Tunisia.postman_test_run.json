@@ -1,0 +1,346 @@
+{
+	"id": "894f0bd8-2cc6-4f2e-a2dd-72fd81b6fc16",
+	"name": "OpenWeather API - QA Tests Tunisia",
+	"timestamp": "2025-07-25T09:50:52.672Z",
+	"collection_id": "47054712-7f9f176f-ae11-4236-8871-7c588e8da79b",
+	"folder_id": 0,
+	"environment_id": "47054712-1ec6cf4a-3bd7-43a4-9bbe-ac420b6c2166",
+	"totalPass": 29,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-07-25T09:50:50.611Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bc725c08-e93f-434d-95c1-628f4b5bb918",
+			"name": "Current Weather - Tunis",
+			"url": "https://api.openweathermap.org/data/2.5/weather?q=Tunis,TN&appid=565f193839d52cafe2d6d7feb1d74413&units=metric",
+			"time": 316,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Content-Type is application/json": true,
+				"Response contains required weather data": true,
+				"City name contains Tunis": true,
+				"Country code is TN": true,
+				"Temperature is valid for Tunisia climate": true,
+				"Humidity is within valid range": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains required weather data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"City name contains Tunis": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Country code is TN": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Temperature is valid for Tunisia climate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Humidity is within valid range": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				316
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Content-Type is application/json": true,
+					"Response contains required weather data": true,
+					"City name contains Tunis": true,
+					"Country code is TN": true,
+					"Temperature is valid for Tunisia climate": true,
+					"Humidity is within valid range": true
+				}
+			]
+		},
+		{
+			"id": "34fd2ff8-a0f9-4e69-9aa7-09f4a091d6a4",
+			"name": "Current Weather - Radès",
+			"url": "https://api.openweathermap.org/data/2.5/weather?q=Radès,TN&appid=565f193839d52cafe2d6d7feb1d74413&units=metric",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is acceptable": true,
+				"Weather data structure is valid": true,
+				"Location is in Tunisia": true,
+				"Temperature data is present": true,
+				"Weather description is provided": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is acceptable": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Weather data structure is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Location is in Tunisia": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Temperature data is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Weather description is provided": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is acceptable": true,
+					"Weather data structure is valid": true,
+					"Location is in Tunisia": true,
+					"Temperature data is present": true,
+					"Weather description is provided": true
+				}
+			]
+		},
+		{
+			"id": "861d16d4-5f50-4392-87f4-e66b8c5feae5",
+			"name": "Weather by Coordinates - Tunis",
+			"url": "https://api.openweathermap.org/data/2.5/weather?lat=36.8065&lon=10.1815&appid=565f193839d52cafe2d6d7feb1d74413&units=metric",
+			"time": 194,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Coordinates match Tunis area": true,
+				"Weather data is complete": true,
+				"Wind data is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Coordinates match Tunis area": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Weather data is complete": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Wind data is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Coordinates match Tunis area": true,
+					"Weather data is complete": true,
+					"Wind data is present": true
+				}
+			]
+		},
+		{
+			"id": "d5610bed-6837-4e3d-93e5-4fc2e1c06304",
+			"name": "5-Day Forecast - Tunis",
+			"url": "https://api.openweathermap.org/data/2.5/forecast?q=Tunis,TN&appid=565f193839d52cafe2d6d7feb1d74413&units=metric",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is acceptable": true,
+				"Forecast list is present": true,
+				"City information contains Tunis": true,
+				"Each forecast item has required data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is acceptable": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Forecast list is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"City information contains Tunis": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each forecast item has required data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is acceptable": true,
+					"Forecast list is present": true,
+					"City information contains Tunis": true,
+					"Each forecast item has required data": true
+				}
+			]
+		},
+		{
+			"id": "e8a17b62-53b8-44ca-b7db-4134c8790089",
+			"name": "Error Test - Invalid API Key",
+			"url": "https://api.openweathermap.org/data/2.5/weather?q=Tunis,TN&appid=invalid_key_test&units=metric",
+			"time": 114,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401 - Unauthorized": true,
+				"Error message is present": true,
+				"Response contains error code": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401 - Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains error code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				114
+			],
+			"allTests": [
+				{
+					"Status code is 401 - Unauthorized": true,
+					"Error message is present": true,
+					"Response contains error code": true
+				}
+			]
+		},
+		{
+			"id": "d0f3fc9e-b0b1-4913-b2da-3d34109f24fc",
+			"name": "Error Test - City Not Found",
+			"url": "https://api.openweathermap.org/data/2.5/weather?q=VilleInexistante123,TN&appid=565f193839d52cafe2d6d7feb1d74413&units=metric",
+			"time": 148,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404 - Not Found": true,
+				"Error message indicates city not found": true,
+				"Response contains proper error code": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404 - Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates city not found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains proper error code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				148
+			],
+			"allTests": [
+				{
+					"Status code is 404 - Not Found": true,
+					"Error message indicates city not found": true,
+					"Response contains proper error code": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1105,
+	"collection": {
+		"requests": [
+			{
+				"id": "bc725c08-e93f-434d-95c1-628f4b5bb918",
+				"method": "GET"
+			},
+			{
+				"id": "34fd2ff8-a0f9-4e69-9aa7-09f4a091d6a4",
+				"method": "GET"
+			},
+			{
+				"id": "861d16d4-5f50-4392-87f4-e66b8c5feae5",
+				"method": "GET"
+			},
+			{
+				"id": "d5610bed-6837-4e3d-93e5-4fc2e1c06304",
+				"method": "GET"
+			},
+			{
+				"id": "e8a17b62-53b8-44ca-b7db-4134c8790089",
+				"method": "GET"
+			},
+			{
+				"id": "d0f3fc9e-b0b1-4913-b2da-3d34109f24fc",
+				"method": "GET"
+			}
+		]
+	}
+}
